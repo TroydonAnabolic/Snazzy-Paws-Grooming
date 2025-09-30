@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home — Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav">
+            <li class="brand">
+              <a href="index.html" aria-current="page">Snazzy Paws Grooming</a>
+            </li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container hero">
+        <h1 class="visually-hidden">Snazzy Paws Grooming — Home</h1>
+        <figure class="hero-figure">
+          <img
+            src="https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1200&auto=format&fit=crop"
+            alt="Happy groomed dog sitting on a grooming table"
+          />
+          <figcaption class="visually-hidden">
+            A groomed dog at the salon
+          </figcaption>
+        </figure>
+        <p class="lede">
+          Professional grooming with care. Book online and browse our gallery of
+          happy pups.
+        </p>
+        <p>
+          <a class="btn primary" href="booking.html">Book an appointment</a>
+          <a class="btn" href="services.html">View services</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <strong>Opening hours:</strong>
+        <ul class="hours">
+          <li>Mon–Fri: 9:00am – 5:00pm</li>
+          <li>Sat: 10:00am – 2:00pm</li>
+          <li>Sun: Closed</li>
+        </ul>
+        <p class="copyright">© <span id="year"></span> Snazzy Paws Grooming</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

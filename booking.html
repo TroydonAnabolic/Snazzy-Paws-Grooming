@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Booking — Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav">
+            <li class="brand"><a href="index.html">Snazzy Paws Grooming</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html" aria-current="page">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container">
+        <h1>Book an appointment</h1>
+        <p class="lede">
+          Forms are non-functional; fields validate in the browser.
+        </p>
+
+        <form
+          class="form"
+          action="#"
+          method="post"
+          novalidate
+          aria-describedby="booking-help"
+        >
+          <p id="booking-help" class="help">
+            Required fields are marked with an asterisk (*).
+          </p>
+
+          <div class="field">
+            <label for="ownerName">Owner’s name *</label>
+            <input
+              id="ownerName"
+              name="ownerName"
+              type="text"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">Email address *</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="dogName">Dog’s name *</label>
+            <input id="dogName" name="dogName" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="breed">Breed *</label>
+            <input id="breed" name="breed" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="age">Age (years) *</label>
+            <input
+              id="age"
+              name="age"
+              type="number"
+              min="0"
+              max="30"
+              step="0.1"
+              required
+            />
+          </div>
+
+          <div class="actions">
+            <button
+              class="btn primary"
+              type="submit"
+              aria-label="Submit booking form"
+            >
+              Submit booking
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <strong>Opening hours:</strong>
+        <ul class="hours">
+          <li>Mon–Fri: 9:00am – 5:00pm</li>
+          <li>Sat: 10:00am – 2:00pm</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
